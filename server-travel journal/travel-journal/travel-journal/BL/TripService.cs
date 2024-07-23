@@ -83,6 +83,8 @@ namespace travel_journal.Services
                 EndDate = trip.EndDate,
                 CoverPhotoUrl = trip.CoverPhotoUrl,
                 UserId = trip.UserId,
+                Rating = trip.Rating,
+                Starred = trip.Starred,
                 JournalEntries = MapToJournalEntryDTOs(trip.JournalEntries),
             };
         }
@@ -106,6 +108,8 @@ namespace travel_journal.Services
                 StartDate = tripCreateDto.StartDate,
                 EndDate = tripCreateDto.EndDate,
                 CoverPhotoUrl = tripCreateDto.CoverPhotoUrl,
+                Rating = tripCreateDto.Rating,
+                Starred= tripCreateDto.Starred,
                 UserId = tripCreateDto.UserId,
             };
         }
@@ -117,6 +121,8 @@ namespace travel_journal.Services
             trip.StartDate = tripUpdateDto.StartDate;
             trip.EndDate = tripUpdateDto.EndDate;
             trip.CoverPhotoUrl = tripUpdateDto.CoverPhotoUrl;
+            trip.Rating = tripUpdateDto.Rating;
+            trip.Starred= tripUpdateDto.Starred;
         }
 
         private ICollection<JournalEntryDTO> MapToJournalEntryDTOs(ICollection<JournalEntry> journalEntries)
@@ -131,6 +137,7 @@ namespace travel_journal.Services
                     Date = entry.Date,
                     Location = entry.Location,
                     TripId = entry.TripId,
+                    Rating=entry.Rating,
                 });
             }
             return journalEntryDTOs;

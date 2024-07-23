@@ -10,6 +10,8 @@ namespace travel_journal.DTO
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string CoverPhotoUrl { get; set; }
+        public int Rating { get; set; }
+        public Boolean Starred { get; set; }
         public string UserId { get; set; }
         public ICollection<JournalEntryDTO> JournalEntries { get; set; }
     }

@@ -8,6 +8,7 @@ namespace travel_journal.DTO
         public string Text { get; set; }
         public DateTime Date { get; set; }
         public string Location { get; set; }
+        public int Rating { get; set; }
         public int TripId { get; set; }
         public ICollection<PhotoDTO> Photos { get; set; }
     }

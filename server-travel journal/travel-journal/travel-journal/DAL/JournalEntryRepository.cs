@@ -34,6 +34,7 @@ namespace travel_journal.Repositories
                                          Date = e.Date,
                                          Location = e.Location,
                                          TripId = e.TripId,
+                                         Rating= e.Rating,
                                          Photos = e.Photos.Select(p => new PhotoDTO
                                          {
                                              Id = p.Id,
@@ -67,6 +68,7 @@ namespace travel_journal.Repositories
                     Date = entry.Date,
                     Location = entry.Location,
                     TripId = entry.TripId,
+                    Rating= entry.Rating,
                     Photos = entry.Photos.Select(p => new PhotoDTO
                     {
                         Id = p.Id,
@@ -97,6 +99,7 @@ namespace travel_journal.Repositories
                                          Date = e.Date,
                                          Location = e.Location,
                                          TripId = e.TripId,
+                                         Rating = e.Rating,
                                          Photos = e.Photos.Select(p => new PhotoDTO
                                          {
                                              Id = p.Id,
@@ -124,6 +127,7 @@ namespace travel_journal.Repositories
                     Date = journalEntryDTO.Date,
                     Location = journalEntryDTO.Location,
                     TripId = journalEntryDTO.TripId,
+                    Rating = journalEntryDTO.Rating,
                     Photos = []
                 };
                 _context.JournalEntries.Add(entry);
@@ -163,7 +167,7 @@ namespace travel_journal.Repositories
                 entry.Text = journalEntryDTO.Text;
                 entry.Date = journalEntryDTO.Date;
                 entry.Location = journalEntryDTO.Location;
-
+                entry.Rating = journalEntryDTO.Rating;
                 // Update Photos
                 entry.Photos.Clear();
                 foreach (var photoDTO in journalEntryDTO.Photos)

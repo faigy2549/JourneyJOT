@@ -18,7 +18,7 @@ namespace travel_journal.Repositories
 
         public async Task<bool> CreateUserAsync(RegisterModel model)
         {
-            var user = new User { UserName = model.Username, Email = model.Email };
+            var user = new User { UserName = model.Username, Email = model.Email ,ProfileImage=model.ProfileImage};
             var result = await _userManager.CreateAsync(user, model.Password);
             return result.Succeeded;
         }
