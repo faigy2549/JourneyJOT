@@ -1,0 +1,16 @@
+.friendlyMessage {
+    text-align: "center";
+    margin-top: 100px;
+    /* font-family: ; */
+  }
+  .errorMessage{
+    color:"black";
+    font-size: "26px";
+  }
+  .button{
+    margin-top: 20px;
+  }
+  .offer{
+    color: "white";
+    font-size: "30px";
+  }

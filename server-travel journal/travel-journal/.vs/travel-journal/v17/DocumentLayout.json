@@ -1,0 +1,555 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\authenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dto\\journalentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dto\\journalentrydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\controllers\\journalentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\controllers\\journalentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\models\\photo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\models\\loginmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\photorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\photoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\iphotoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\controllers\\photocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\emailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\tripnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\tripnotificationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\models\\emailsettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\journalentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\journalentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\journalentryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\journalentryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\triprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\tripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\controllers\\tripcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\iemailservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\iphotorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\itriprepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\itripservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dto\\tripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dto\\tripdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\ijournalentryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\ijournalentryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\ijournalentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\ijournalentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\travel-journal.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\travel-journal.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\dal\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\dal\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\bl\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\bl\\iauthenticationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\data\\applicationcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|c:\\users\\faigy\\onedrive\\documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{133A75DC-7D96-43DF-A601-E9641DAC8301}|travel-journal\\travel-journal.csproj|solutionrelative:travel-journal\\mapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginModel.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\LoginModel.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Models\\LoginModel.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\LoginModel.cs",
+              "RelativeToolTip": "travel-journal\\Models\\LoginModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-14T19:16:38.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\AuthenticationService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\AuthenticationService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\AuthenticationService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\AuthenticationService.cs",
+              "ViewState": "AQIAAA8AAAAAAADk/b04wEIAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:14:48.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "travel-journal\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAAAD4AAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T12:17:52.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "JournalEntryController.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\JournalEntryController.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Controllers\\JournalEntryController.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\JournalEntryController.cs",
+              "RelativeToolTip": "travel-journal\\Controllers\\JournalEntryController.cs",
+              "ViewState": "AQIAAE8AAAAAAAAAAAAQwFcAAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:58:43.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "JournalEntryDTO.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DTO\\JournalEntryDTO.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DTO\\JournalEntryDTO.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DTO\\JournalEntryDTO.cs",
+              "RelativeToolTip": "travel-journal\\DTO\\JournalEntryDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T12:12:27.625Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Photo.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\Photo.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Models\\Photo.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\Photo.cs",
+              "RelativeToolTip": "travel-journal\\Models\\Photo.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:52:01.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Program.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Program.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Program.cs",
+              "RelativeToolTip": "travel-journal\\Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwDcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:59:39.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PhotoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\PhotoRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\PhotoRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\PhotoRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\PhotoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAwBMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:38:41.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\PhotoService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\PhotoService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\PhotoService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\PhotoService.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAUwHQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:37:26.941Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PhotoController.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\PhotoController.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Controllers\\PhotoController.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\PhotoController.cs",
+              "RelativeToolTip": "travel-journal\\Controllers\\PhotoController.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAiwFIAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:38:22.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IPhotoService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IPhotoService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\IPhotoService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IPhotoService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\IPhotoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:37:48.471Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\appsettings.json",
+              "RelativeDocumentMoniker": "travel-journal\\appsettings.json",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\appsettings.json",
+              "RelativeToolTip": "travel-journal\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-03T15:45:12.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "EmailService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\EmailService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\EmailService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\EmailService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\EmailService.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwB0AAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:05:47.704Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "EmailSettings.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\EmailSettings.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Models\\EmailSettings.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Models\\EmailSettings.cs",
+              "RelativeToolTip": "travel-journal\\Models\\EmailSettings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:06:10.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "TripNotificationService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\TripNotificationService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\TripNotificationService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\TripNotificationService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\TripNotificationService.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwCwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:03:19.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "JournalEntryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\JournalEntryRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\JournalEntryRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\JournalEntryRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\JournalEntryRepository.cs",
+              "ViewState": "AQIAALIAAAAAAAAAAAAwwM0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:58:06.368Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "JournalEntryService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\JournalEntryService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\JournalEntryService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\JournalEntryService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\JournalEntryService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAwwGkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:56:58.943Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "TripRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\TripRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\TripRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\TripRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\TripRepository.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAwwDIAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:56:44.23Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TripService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\TripService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\TripService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\TripService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\TripService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAiwIsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:55:47.137Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "TripController.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\TripController.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Controllers\\TripController.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Controllers\\TripController.cs",
+              "RelativeToolTip": "travel-journal\\Controllers\\TripController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAF8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:55:25.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IEmailService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IEmailService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\IEmailService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IEmailService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\IEmailService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T21:06:37.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "IPhotoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IPhotoRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\IPhotoRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IPhotoRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\IPhotoRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABTAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T18:39:34.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ITripRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\ITripRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\ITripRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\ITripRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\ITripRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:56:57.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ItripService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\ItripService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\ItripService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\ItripService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\ItripService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T14:55:13.186Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "TripDTO.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DTO\\TripDTO.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DTO\\TripDTO.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DTO\\TripDTO.cs",
+              "RelativeToolTip": "travel-journal\\DTO\\TripDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T21:00:19.749Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IJournalEntryService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IJournalEntryService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\IJournalEntryService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IJournalEntryService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\IJournalEntryService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:57:29.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "IJournalEntryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IJournalEntryRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\IJournalEntryRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IJournalEntryRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\IJournalEntryRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:57:49.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "travel-journal.http",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\travel-journal.http",
+              "RelativeDocumentMoniker": "travel-journal\\travel-journal.http",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\travel-journal.http",
+              "RelativeToolTip": "travel-journal\\travel-journal.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-07-03T20:55:24.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\IUserRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:15:32.124Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\UserRepository.cs",
+              "RelativeDocumentMoniker": "travel-journal\\DAL\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\DAL\\UserRepository.cs",
+              "RelativeToolTip": "travel-journal\\DAL\\UserRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAgwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:15:06.412Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "IAuthenticationService.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IAuthenticationService.cs",
+              "RelativeDocumentMoniker": "travel-journal\\BL\\IAuthenticationService.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\BL\\IAuthenticationService.cs",
+              "RelativeToolTip": "travel-journal\\BL\\IAuthenticationService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T15:14:31.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ApplicationContext.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Data\\ApplicationContext.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Data\\ApplicationContext.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Data\\ApplicationContext.cs",
+              "RelativeToolTip": "travel-journal\\Data\\ApplicationContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T11:41:17.008Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Mapper.cs",
+              "DocumentMoniker": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Mapper.cs",
+              "RelativeDocumentMoniker": "travel-journal\\Mapper.cs",
+              "ToolTip": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\Mapper.cs",
+              "RelativeToolTip": "travel-journal\\Mapper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-03T12:05:01.455Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

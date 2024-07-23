@@ -1,0 +1,89 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\bluelogo.png",
+      "PackagePath": "staticwebassets\\assets\\bluelogo.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\candyride.JPG",
+      "PackagePath": "staticwebassets\\assets\\candyride.JPG"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\circle.png",
+      "PackagePath": "staticwebassets\\assets\\circle.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\cover.mp4",
+      "PackagePath": "staticwebassets\\assets\\cover.mp4"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\cover.png",
+      "PackagePath": "staticwebassets\\assets\\cover.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\logo1.png",
+      "PackagePath": "staticwebassets\\assets\\logo1.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\mountain.JPG",
+      "PackagePath": "staticwebassets\\assets\\mountain.JPG"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\assets\\venice.JPG",
+      "PackagePath": "staticwebassets\\assets\\venice.JPG"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\bay.jpg",
+      "PackagePath": "staticwebassets\\bay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\circle.png",
+      "PackagePath": "staticwebassets\\circle.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\falls1.jpg",
+      "PackagePath": "staticwebassets\\falls1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\grandCanyon.JPG",
+      "PackagePath": "staticwebassets\\grandCanyon.JPG"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\hersheys.png",
+      "PackagePath": "staticwebassets\\hersheys.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\manhatton.png",
+      "PackagePath": "staticwebassets\\manhatton.png"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\mississippiRiver.jpg",
+      "PackagePath": "staticwebassets\\mississippiRiver.jpg"
+    },
+    {
+      "Id": "C:\\Users\\faigy\\OneDrive\\Documents\\travel journal project\\server-travel journal\\travel-journal\\travel-journal\\wwwroot\\niagraFalls.jpg",
+      "PackagePath": "staticwebassets\\niagraFalls.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.travel-journal.props",
+      "PackagePath": "build\\travel-journal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.travel-journal.props",
+      "PackagePath": "buildMultiTargeting\\travel-journal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.travel-journal.props",
+      "PackagePath": "buildTransitive\\travel-journal.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.travel-journal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

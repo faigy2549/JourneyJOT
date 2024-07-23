@@ -1,0 +1,173 @@
+body {
+    background-color: #ADD8E6; /* Light grayish blue background */
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.homepage {
+    text-align: center;
+    color: #333;
+}
+
+.menu-bar {
+    background-color: #ADD8E6; /* Deep teal background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.menu-bar:hover {
+    background-color: #ADD8E6; /* Light teal on hover */
+}
+
+.menu-logo {
+    height: 100px; /* Adjust as needed */
+}
+
+.profile-container {
+    cursor: pointer;
+    position: relative;
+}
+
+.profile-icon {
+    font-size: 4rem; /* Increase size */
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ADD8E6;
+    color: black;
+    margin-right: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.profile-container::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    bottom: -10px;
+    left: -10px;
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-container {
+    margin: 2rem auto;
+    max-width: 1200px; /* Increased width */
+    position: relative;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 500px; /* Decreased height */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+}
+
+.carousel-text-1 {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-text-2 {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.carousel-text-3 {
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.center-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.round-button {
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.round-button:hover {
+    background-color: #333;
+}
+
+.content-section {
+    margin-top: 3rem;
+}
+
+/* Carousel custom styles */
+
+.custom-carousel .p-carousel-indicators {
+    display: none; 
+}
+
+.custom-carousel .p-carousel-container {
+    perspective: 1000px;
+}
+
+.custom-carousel .p-carousel-item {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.custom-carousel .p-carousel-item.p-carousel-item-next,
+.custom-carousel .p-carousel-item.p-carousel-item-prev {
+    transform: rotateY(180deg);
+}
+.joinEmail {
+    background-color: black; /* Deep teal background */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.joinEmail-text {
+    flex: 1; 
+}
+
+.footer {
+    background-color:#ADD8E6 ; /* Deep teal background */
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    bottom: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
