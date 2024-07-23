@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from 'react';
 import { fetchEntries } from '../Services/TripService';
 import { DataView } from 'primereact/dataview';
-import {Skeleton} from 'primereact/skeleton'
 import { Tag } from 'primereact/tag';
 import { Button } from 'primereact/button';
 import {Rating} from 'primereact/rating'
@@ -12,6 +11,7 @@ import { InputIcon } from 'primereact/inputicon';
 import { InputText } from 'primereact/inputtext';
 import './style sheets/TripsView.css'
 import { useNavigate } from 'react-router-dom';
+import { getCardClassName } from '../utils';
 
 const TripsView = () => {
   const [entries, setEntries] = useState([]);
@@ -47,19 +47,7 @@ const navigate=useNavigate()
         entry.title.toLowerCase().includes(searchQuery.toLowerCase())
       );
       setEntries(filteredEntries);
-    } else {
-      fetchEntries()
-        .then((data) => {
-          const sortedEntries = data.sort((a, b) => new Date(a.startDate) - new Date(b.startDate));
-          setEntries(sortedEntries);
-          setLoading(false);
-        })
-        .catch((error) => {
-          console.error('Error fetching entries:', error);
-          setError(error);
-          setLoading(false);
-        });
-    }
+    } 
   }, [searchQuery,entries]);
 
   useEffect(() => {
@@ -69,18 +57,6 @@ const navigate=useNavigate()
     }
   }, [selectedEntry,navigate]);
 
-  const getCardClassName = (startDate, endDate) => {
-    const now = new Date();
-    const start = new Date(startDate);
-    const end = new Date(endDate);
-    if (start > now) {
-      return 'future-trip';
-    } else if (end < now) {
-      return 'past-trip';
-    } else {
-      return 'happening now';
-    }
-  };
 
   const onSortChange = (event) => {
     const value = event.value;
@@ -101,24 +77,6 @@ const getSeverityByStatus =(tripStatus)=>{
   :tripStatus==='past-trip'?"warning" 
   : "danger" ;
 }
-
-  const skeletonTemplate = () => (
-    <div className="col-12 sm:col-6 lg:col-12 xl:col-4 p-2">
-      <div className="p-4 border-1 surface-border surface-card border-round">
-        <Skeleton className="w-6rem border-round h-1rem" />
-        <Skeleton className="w-3rem border-round h-1rem" />
-        <div className="flex flex-column align-items-center gap-3 py-5">
-          <Skeleton className="w-9 shadow-2 border-round h-10rem" />
-          <Skeleton className="w-8rem border-round h-2rem" />
-          <Skeleton className="w-6rem border-round h-1rem" />
-        </div>
-        <div className="flex align-items-center justify-content-between">
-          <Skeleton className="w-4rem border-round h-2rem" />
-          <Skeleton shape="circle" className="w-3rem h-3rem" />
-        </div>
-      </div>
-    </div>
-  );
 
   const header = () => {
     return <div className="header">
@@ -147,6 +105,12 @@ const getSeverityByStatus =(tripStatus)=>{
               <i className="pi pi-calendar"></i>
               <span className="font-semibold">{new Date(trip.startDate).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
             </div>
+            {trip.starred &&<Tag severity="primary">
+            <div className="flex align-items-center gap-2">
+            <i className="pi pi-star text-xs"></i>
+                <span className="text-base">Starred</span>
+            </div>
+             </Tag>}
             <Tag value={trip.status} severity={getSeverityByStatus(tripStatus)}>{tripStatus==='future-trip'? "Future Trip" :tripStatus==='happening now'? "Trip Happening Now" :tripStatus==='past-trip'?"Past Trip" : ""}</Tag>
           </div>
           <div className="flex flex-column align-items-center gap-3 py-5">
@@ -179,7 +143,7 @@ const getSeverityByStatus =(tripStatus)=>{
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
-      {entries.length > 0 ? (
+      {entries.length > 0 && (
         <DataView 
         value={entries} 
         itemTemplate={tripTemplate} 
@@ -189,8 +153,6 @@ const getSeverityByStatus =(tripStatus)=>{
         sortField={sortField} sortOrder={sortOrder}
         className="dataView"
         />
-      ) : (
-        <Skeleton Template={skeletonTemplate} />
       )}
     </div>
   );

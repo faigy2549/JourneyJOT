@@ -12,6 +12,7 @@ import './style sheets/TripsView.css'
 import { useNavigate,useParams } from 'react-router-dom';
 import { fetchTripById } from '../Services/TripService';
 import moment from 'moment';
+import { convertDateToDMY, convertDateToenUS, getCardClassName } from '../utils';
 
 const JournalView = () => {
     const [journalEntries, setJournalEntries] = useState([]);
@@ -84,14 +85,18 @@ const JournalView = () => {
        setResponse(response)
       //setselected entry here so that it opens for editing
   }
+  const pastTrip=()=>{
+    return (getCardClassName(trip?.startDate,trip?.endDate)==='past-trip'||'future-trip')?true:false;
+  }
     const entryTemplate = (entry) => {
         return (
+          <div>
           <div className="col-12 sm:col-6 lg:col-12  p-2 " key={entry.id} style={{ backgroundColor:"#ADD8E6"}}>
             <div className="p-4 border-1 surface-border surface-card border-round" style={{ maxWidth: '100rem',  maxHeight: '25rem' }}>
               <div className="flex flex-wrap align-items-center justify-content-between gap-2">
                 <div className="flex align-items-center gap-2">
                   <i className="pi pi-calendar"></i>
-                  <span className="font-semibold">{new Date(entry.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                  <span className="font-semibold">{convertDateToenUS(entry.date)}</span>
                 </div>
               </div>
               <div className="flex flex-column align-items-center gap-3 py-5">
@@ -103,6 +108,7 @@ const JournalView = () => {
                     className="p-button-rounded"
                     onClick={() =>{
                       setSelectedEntry(entry);
+                      setRating(entry.rating)
                       setVisible(false)
                       setText(entry.text)
                       }}
@@ -110,6 +116,8 @@ const JournalView = () => {
                   </Button>
               </div>
             </div>
+          </div>
+          <br></br>
           </div>
         );
       };
@@ -128,7 +136,11 @@ const JournalView = () => {
     <div className="card flex justify-content-center">
     <Button icon="pi pi-angle-right"  onClick={() => setVisible(true)} />
     <Sidebar visible={visible} onHide={() => setVisible(false)}>
-        <h2>{trip?.title}         <Button icon="pi pi-plus"  text raised size="small" onClick={addEntry}></Button></h2>
+        <h2>{trip?.title}</h2>
+        <h3>{convertDateToDMY(trip?.startDate)} - {convertDateToDMY(trip?.endDate)}</h3>
+        <h5>{trip?.description}</h5>
+        <Button  text raised size="small" onClick={addEntry} disabled={pastTrip}>Add Entry</Button>
+        <br></br>
         <br></br>
         <DataView 
         value={journalEntries} 
@@ -143,7 +155,7 @@ const JournalView = () => {
         <Card 
         title={<div className="flex align-items-center gap-2">
                 <i className="pi pi-calendar"></i>
-                <span className="font-semibold">{new Date(selectedEntry.date).toLocaleDateString('en-US', { day: 'numeric', month: 'short', year: 'numeric' })}</span>
+                <span className="font-semibold">{convertDateToDMY(selectedEntry.date)}</span>
             </div>} 
         subTitle={trip.title} 
         footer={footer} 
