@@ -1,28 +1,35 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
-import {Password} from 'primereact/password'
-import { Dialog } from 'primereact/dialog'; 
+import { Password } from 'primereact/password';
+import { Dialog } from 'primereact/dialog';
 import { Login } from '../Services/AuthenticationService';
+import { setUser } from '../actions';
 
-const LoginDialog = ({ isLoginDialogVisible, handleDialogHide }) => {
+const LoginDialog = ({ isLoginDialogVisible, handleDialogHide, handleLoggedIn }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [errorMessage, setErrorMessage] = useState('');
+  const [loading, setLoading] = useState(false);
+  const dispatch = useDispatch();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
+    setLoading(true); // Start loading
     try {
-      const response = await Login(username, password);
-      if (response) {
-        console.log("logged in", response);
-        handleDialogHide()
-        // login successful, handle login logic here
+      const user = await Login(username, password);
+      if (user) {
+        dispatch(setUser(user));
+        handleLoggedIn();
+        setErrorMessage(''); // Clear error message on successful login
       } else {
-        console.log("log failed", response)
         throw new Error('Login failed');
       }
     } catch (error) {
-      throw error; // Re-throw the error for handling in the component
+      setErrorMessage('Login failed. Please check your username and password.');
+    } finally {
+      setLoading(false); // End loading
     }
   };
 
@@ -42,16 +49,28 @@ const LoginDialog = ({ isLoginDialogVisible, handleDialogHide }) => {
             <Password required toggleMask feedback={false} tabIndex={1} value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
         </div>
+        {errorMessage && (
+          <div className="p-error p-grid p-col-12" style={{ textAlign: 'center' }}>
+            {errorMessage}
+          </div>
+        )}
         <br />
-        <Button type="submit" label="Login" className="p-col-offset-4 p-col-4" style={{ width: '250px' } } />
+        <Button
+          type="submit"
+          label={loading ? "Logging in..." : "Login"}
+          className="p-col-offset-4 p-col-4"
+          style={{ width: '250px' }}
+          disabled={loading} // Disable button when loading
+        />
       </form>
       <div style={{ fontSize: '0.8rem', textAlign: 'center' }}>
         <p>By signing in, you agree to JourneyJOT</p>
         <p>
-          <a>Terms and Conditions</a> and <a>Privacy Policy.</a>
+          <a href="#terms">Terms and Conditions</a> and <a href="#privacy">Privacy Policy.</a>
         </p>
       </div>
     </Dialog>
   );
 };
-export {LoginDialog} ;
+
+export { LoginDialog };

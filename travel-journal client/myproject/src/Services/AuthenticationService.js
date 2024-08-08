@@ -1,4 +1,5 @@
 import React from 'react';
+import { getCookie } from '../utils';
 const BASE_URL = 'https://localhost:44393/api/Authentication'; 
 
 const Login = async (username, password) => {
@@ -11,18 +12,22 @@ const Login = async (username, password) => {
       body: JSON.stringify({ username, password }),
       mode: 'cors', 
       credentials: 'include',
-      scheme: window.location.protocol,
     });
 
-    if (!response.ok) { // Check if the response is not OK (200)
+    if (!response.ok) {
       throw new Error('Login failed');
     }
-    console.log("auth", response);
-    return true; 
+
+    const userId = getCookie('userId');
+    const user = await getUserById(userId);
+
+    return user; 
   } catch (error) {
-    throw error; // Re-throw the error for handling in the component
+    throw error;
   }
 };
+
+
 
 const Register = async (username, password, confirmPassword, email) => {
   try {
@@ -43,6 +48,26 @@ const Register = async (username, password, confirmPassword, email) => {
     return true; // Or return a success message
   } catch (error) {
     throw error; // Re-throw the error for handling in the component
+  }
+};
+
+export const getUserById = async (userId) => {
+  try {
+    const response = await fetch('https://localhost:44393/api/User/'+userId, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      mode: 'cors', 
+    });
+
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+
+    return response.json();
+  } catch (error) {
+    throw new Error('Error fetching data:', error);
   }
 };
 

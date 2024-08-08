@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ADD8E6; /* blue background */
+  padding: 1rem;
+  border-radius: 8px; /* optional, for rounded corners */
+}
+  
+  .header .search-input {
+    width: 10%;
+  }
+  
+  .header .sort-dropdown {
+    width: 13%;
+  }
+  .dataView{
+    background-color: #ADD8E6;
+  }
+  .sideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* adjust the width to your liking */
+    z-index: 1;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+  }

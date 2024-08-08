@@ -21,7 +21,8 @@ export const fetchJournalEntrysByTripId = async (tripId) => {
   
 export const updateJournalEntry = async (entryId,updatedEntry) => {
     try {
-      const response = await fetch('https://localhost:44393/api/JournalEntry/'+entryId, {
+      const response = await fetch('https://localhost:44393/api/JournalEntry/'+entryId, 
+        {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +40,6 @@ export const updateJournalEntry = async (entryId,updatedEntry) => {
     }
   };
   export const createJournalEntry = async (entry) => {
-    console.log(entry)
     try {
       const response = await fetch('https://localhost:44393/api/JournalEntry', {
         method: 'POST',
@@ -58,3 +58,23 @@ export const updateJournalEntry = async (entryId,updatedEntry) => {
       throw new Error('Error fetching data:', error);
     }
   };
+  export const uploadPhoto = async (journalEntryId, formData) => {
+    try {
+        const response = await fetch('https://localhost:44393/api/upload', {
+            method: 'POST',
+            mode: 'cors',
+            credentials: 'include',
+            body: formData
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(`Network response was not ok: ${errorData.message}`);
+        }
+
+        return response.json();
+    } catch (error) {
+        throw new Error(`Error uploading photo: ${error.message}`);
+    }
+};
+

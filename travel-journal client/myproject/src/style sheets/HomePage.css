@@ -4,6 +4,57 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.carousel-section {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.carousel-container {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.email-bar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Full width for email bar */
+    margin-top: 6rem; /* Space between carousel and email bar */
+    background-color: black; /* Deep teal background */
+    color: white;
+    padding: 1rem 2rem;
+  }
+  
+  .joinEmail-text {
+    flex: 1;
+  }
+  
+  .email-input-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adds space between input and button */
+  }
+
+.footer {
+    background-color: #025570;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
 .homepage {
     text-align: center;
     color: #333;
@@ -62,44 +113,52 @@ body {
     background-position: center;
 }
 
-.carousel-container {
-    margin: 2rem auto;
-    max-width: 1200px; /* Increased width */
-    position: relative;
-}
-
 .carousel-image {
     width: 100%;
-    height: 500px; /* Decreased height */
+    object-fit: cover; /* Ensures images cover the container */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
     background-size: cover;
     background-position: center;
     opacity: 0.8;
+    position: relative;
 }
 
-.carousel-text-1 {
+.weather-carousel-text {
+    position: absolute;
+    color: black;
+    font-size: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+.locations-carousel-text {
     position: absolute;
     color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 1.5rem;
+    text-align: left;
+    bottom: 0;
 }
-.carousel-text-2 {
+.review-carousel-text {
     position: absolute;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.carousel-text-3 {
-    position: absolute;
-    color: white;
-    font-size: 2rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+  }
 
 .center-button-container {
     display: flex;
@@ -126,11 +185,12 @@ body {
     margin-top: 3rem;
 }
 
-/* Carousel custom styles */
-
+/* Hide carousel indicators */
 .custom-carousel .p-carousel-indicators {
     display: none; 
 }
+
+/* Carousel custom styles */
 
 .custom-carousel .p-carousel-container {
     perspective: 1000px;
@@ -138,36 +198,22 @@ body {
 
 .custom-carousel .p-carousel-item {
     transform-style: preserve-3d;
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
-.custom-carousel .p-carousel-item.p-carousel-item-next,
-.custom-carousel .p-carousel-item.p-carousel-item-prev {
-    transform: rotateY(180deg);
-}
-.joinEmail {
-    background-color: black; /* Deep teal background */
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+.custom-carousel .p-carousel-item-next,
+.custom-carousel .p-carousel-item-prev {
+    transform: rotateY(90deg);
 }
 
-.joinEmail-text {
-    flex: 1; 
+.custom-carousel .p-carousel-item.p-carousel-item-active {
+    transform: rotateY(0deg);
 }
 
-.footer {
-    background-color:#ADD8E6 ; /* Deep teal background */
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    bottom: 0;
-    z-index: 1000;
-    transition: background-color 0.3s ease;
+.custom-carousel .p-carousel-item img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+

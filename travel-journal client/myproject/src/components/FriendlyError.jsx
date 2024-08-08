@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./style sheets/FriendlyError.css"
+import "../style sheets/FriendlyError.css"
 import { Button } from "primereact/button";
 import { useNavigate } from "react-router-dom";
 
