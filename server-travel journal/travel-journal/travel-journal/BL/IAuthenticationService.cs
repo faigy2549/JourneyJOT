@@ -7,6 +7,6 @@ namespace travel_journal.Services
     public interface IAuthenticationService
     {
         Task<bool> RegisterAsync(RegisterModel model);
-        Task<bool> LoginAsync(LoginModel model);
+        Task<string> LoginAsync(LoginModel model);
     }
 }

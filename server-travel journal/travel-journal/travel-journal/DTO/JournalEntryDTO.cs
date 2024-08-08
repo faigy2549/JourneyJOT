@@ -10,6 +10,6 @@ namespace travel_journal.DTO
         public string Location { get; set; }
         public int Rating { get; set; }
         public int TripId { get; set; }
-        public ICollection<PhotoDTO> Photos { get; set; }
+        public ICollection<PhotoDTO>? Photos { get; set; } 
     }
 }

@@ -52,9 +52,17 @@ namespace travel_journal.Controllers
             _logger.LogInformation($"Logging in user: {model.Username}");
             try
             {
-                if (await _authenticationService.LoginAsync(model))
-                {
+                var userId = await _authenticationService.LoginAsync(model);
+                if (userId != null) { 
                     _logger.LogInformation($"User logged in successfully: {model.Username}");
+                    Response.Cookies.Append("userId", userId, new CookieOptions
+                    {
+                        HttpOnly = false,
+                        Secure = true,   
+                        SameSite = SameSiteMode.Lax, 
+                        Expires = DateTimeOffset.UtcNow.AddHours(10) 
+                    });
+
                     return Ok(new { message = "Login successful" });
                 }
                 else

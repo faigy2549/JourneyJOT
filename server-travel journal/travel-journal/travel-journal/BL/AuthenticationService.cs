@@ -49,7 +49,7 @@ namespace travel_journal.Services
             }
         }
 
-        public async Task<bool> LoginAsync(LoginModel model)
+        public async Task<string> LoginAsync(LoginModel model)
         {
             _logger.LogInformation($"Attempting to log in user: {model.Username}");
             try
@@ -58,12 +58,13 @@ namespace travel_journal.Services
                 if (result.Succeeded)
                 {
                     _logger.LogInformation($"User logged in successfully: {model.Username}");
-                    return true;
+                    var user = await _userManager.FindByNameAsync(model.Username);
+                    return user?.Id;
                 }
                 else
                 {
                     _logger.LogInformation($"Invalid login attempt for user: {model.Username}");
-                    return false;
+                    return null;
                 }
             }
             catch (Exception ex)
@@ -72,5 +73,6 @@ namespace travel_journal.Services
                 throw;
             }
         }
+
     }
 }

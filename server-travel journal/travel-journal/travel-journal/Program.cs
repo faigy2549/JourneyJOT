@@ -9,6 +9,8 @@ using travel_journal.Repositories;
 using travel_journal.Services;
 using Serilog;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using System.Text.Json;
+using Microsoft.AspNetCore.Mvc;
 
 var builder = WebApplication.CreateBuilder(args);
 Log.Logger = new LoggerConfiguration()
@@ -18,6 +20,7 @@ Log.Logger = new LoggerConfiguration()
 
 builder.Host.UseSerilog();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddScoped<ITripService, TripService>();
 builder.Services.AddScoped<ITripRepository, TripRepository>();
@@ -29,36 +32,21 @@ builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 builder.Services.AddTransient<IEmailService, EmailService>();
 builder.Services.AddHostedService<TripNotificationService>();
-//builder.Services.AddCors(options =>
-//{
-//    options.AddPolicy("CorsPolicy",
-//                  builder =>
-//                  {
-//                      builder.WithOrigins("http://localhost:3000",
-//                                           "development web site")
-//                                          .AllowAnyHeader()
-//                                          .AllowAnyMethod()
-//                                          .AllowCredentials()
-//                                          ;
-//                      ;
-//                  });
-
-//});
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("CorsPolicy",
                   builder =>
                   {
-                      builder.WithOrigins("http://localhost:3000")
+                      builder.WithOrigins("https://localhost:3000")
                         .AllowAnyMethod()
                           .AllowAnyHeader()
                           .AllowCredentials()
                           .WithExposedHeaders("Content-Disposition");
-                          //.SetIsOriginAllowed(origin => new Uri(origin).Host == "localhost");
-                  });
+                                           });
 });
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("TravelJournalContex")));
+  options.EnableSensitiveDataLogging()
+    .UseSqlServer(builder.Configuration.GetConnectionString("TravelJournalContex")));
 builder.Services.AddIdentity<User, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();

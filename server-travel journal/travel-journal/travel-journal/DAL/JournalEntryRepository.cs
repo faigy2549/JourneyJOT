@@ -6,8 +6,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using travel_journal.DTO;
 using travel_journal.Models;
+using travel_journal.Repositories;
 
-namespace travel_journal.Repositories
+namespace travel_journal.DAL
 {
     public class JournalEntryRepository : IJournalEntryRepository
     {
@@ -34,12 +35,11 @@ namespace travel_journal.Repositories
                                          Date = e.Date,
                                          Location = e.Location,
                                          TripId = e.TripId,
-                                         Rating= e.Rating,
+                                         Rating = e.Rating,
                                          Photos = e.Photos.Select(p => new PhotoDTO
                                          {
-                                             Id = p.Id,
                                              Url = p.Url,
-                                             JournalEntryId = p.JournalEntryId
+                                             JournalEntryId = e.Id
                                          }).ToList()
                                      })
                                      .ToListAsync();
@@ -68,7 +68,7 @@ namespace travel_journal.Repositories
                     Date = entry.Date,
                     Location = entry.Location,
                     TripId = entry.TripId,
-                    Rating= entry.Rating,
+                    Rating = entry.Rating,
                     Photos = entry.Photos.Select(p => new PhotoDTO
                     {
                         Id = p.Id,
@@ -128,7 +128,12 @@ namespace travel_journal.Repositories
                     Location = journalEntryDTO.Location,
                     TripId = journalEntryDTO.TripId,
                     Rating = journalEntryDTO.Rating,
-                    Photos = []
+                    Photos = journalEntryDTO.Photos.Select(p => new Photo
+                    {
+                        Url = p.Url,
+                        JournalEntryId = journalEntryDTO.Id, 
+                    }).ToList()
+
                 };
                 _context.JournalEntries.Add(entry);
                 await _context.SaveChangesAsync();
@@ -180,6 +185,7 @@ namespace travel_journal.Repositories
                 }
 
                 await _context.SaveChangesAsync();
+                UpdateTripRating(journalEntryDTO.TripId);
             }
             catch (Exception ex)
             {
@@ -203,6 +209,26 @@ namespace travel_journal.Repositories
             {
                 _logger.LogError(ex, $"Error deleting journal entry with ID {id}.");
                 throw;
+            }
+        }
+        public void UpdateTripRating(int tripId)
+        {
+            var trip = _context.Trips
+                .Include(t => t.JournalEntries)
+                .SingleOrDefault(t => t.Id == tripId);
+
+            if (trip != null)
+            {
+                if (trip.JournalEntries == null || !trip.JournalEntries.Any())
+                {
+                    trip.Rating = 0;
+                }
+                else
+                {
+                    trip.Rating = (int)trip.JournalEntries.Average(j => j.Rating);
+                }
+
+                _context.SaveChanges();
             }
         }
     }

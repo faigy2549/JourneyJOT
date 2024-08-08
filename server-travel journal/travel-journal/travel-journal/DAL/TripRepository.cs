@@ -19,9 +19,11 @@ namespace travel_journal.Repositories
         public async Task<IEnumerable<Trip>> GetAllTripsAsync()
         {
             _logger.LogInformation("Fetching all trips from the database.");
-            return await _context.Trips
+            var trips = await _context.Trips
                 .Include(t => t.JournalEntries)
+                .ThenInclude(j => j.Photos)
                 .ToListAsync();
+            return trips;
         }
 
         public async Task<Trip> GetTripByIdAsync(int tripId)
@@ -29,6 +31,7 @@ namespace travel_journal.Repositories
             _logger.LogInformation($"Fetching trip with ID {tripId} from the database.");
             return await _context.Trips
                 .Include(t => t.JournalEntries)
+                .ThenInclude(j => j.Photos)
                 .FirstOrDefaultAsync(t => t.Id == tripId);
         }
 
@@ -38,6 +41,7 @@ namespace travel_journal.Repositories
             return await _context.Trips
                .Where(t => t.UserId == userId)
                 .Include(t => t.JournalEntries)
+                 .ThenInclude(j => j.Photos)
                 .ToListAsync();
         }
 

@@ -6,7 +6,6 @@ namespace travel_journal.Repositories
 {
     public interface IUserRepository
     {
-        Task<bool> CreateUserAsync(RegisterModel model);
-        Task<bool> CheckPasswordAsync(LoginModel model);
+        Task<User> GetUserByIdAsync(string id);
     }
 }

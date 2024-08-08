@@ -1,5 +1,6 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using travel_journal.DTO;
 using travel_journal.Models;
 
@@ -7,26 +8,23 @@ namespace travel_journal.Repositories
 {
     public class UserRepository : IUserRepository
     {
-        private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
 
-        public UserRepository(UserManager<User> userManager, SignInManager<User> signInManager)
+        private readonly ApplicationDbContext _context;
+        private readonly ILogger<TripRepository> _logger;
+
+        public UserRepository( ApplicationDbContext context, ILogger<TripRepository> logger)
         {
-            _userManager = userManager;
-            _signInManager = signInManager;
+            _context = context;
+            _logger = logger;
         }
 
-        public async Task<bool> CreateUserAsync(RegisterModel model)
+        public async Task<User> GetUserByIdAsync(string id)
         {
-            var user = new User { UserName = model.Username, Email = model.Email ,ProfileImage=model.ProfileImage};
-            var result = await _userManager.CreateAsync(user, model.Password);
-            return result.Succeeded;
-        }
-
-        public async Task<bool> CheckPasswordAsync(LoginModel model)
-        {
-            var result = await _signInManager.PasswordSignInAsync(model.Username, model.Password, isPersistent: false, lockoutOnFailure: false);
-            return result.Succeeded;
+            //return await _userManager.FindByIdAsync(id);
+            _logger.LogInformation($"Fetching user with ID {id} from the database.");
+            return await _context.Users
+                .Include(t => t.Trips)
+                .FirstOrDefaultAsync(t => t.Id == id);
         }
     }
 }
