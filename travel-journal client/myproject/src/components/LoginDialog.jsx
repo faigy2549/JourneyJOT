@@ -16,7 +16,7 @@ const LoginDialog = ({ isLoginDialogVisible, handleDialogHide, handleLoggedIn })
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    setLoading(true); // Start loading
+    setLoading(true); 
     try {
       const user = await Login(username, password);
       if (user) {
@@ -29,7 +29,7 @@ const LoginDialog = ({ isLoginDialogVisible, handleDialogHide, handleLoggedIn })
     } catch (error) {
       setErrorMessage('Login failed. Please check your username and password.');
     } finally {
-      setLoading(false); // End loading
+      setLoading(false); 
     }
   };
 
@@ -60,7 +60,7 @@ const LoginDialog = ({ isLoginDialogVisible, handleDialogHide, handleLoggedIn })
           label={loading ? "Logging in..." : "Login"}
           className="p-col-offset-4 p-col-4"
           style={{ width: '250px' }}
-          disabled={loading} // Disable button when loading
+          disabled={loading} 
         />
       </form>
       <div style={{ fontSize: '0.8rem', textAlign: 'center' }}>

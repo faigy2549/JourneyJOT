@@ -86,6 +86,7 @@ const MenuBar = () => {
       <RegisterDialog
         isRegisterDialogVisible={isRegisterDialogVisible}
         handleDialogHide={handleDialogHide}
+        handleLoggedIn={handleLoggedIn}
       />
       <div className="menu-bar">
         <img src="https://localhost:44393/assets/logo1.png" alt="Logo" className="menu-logo" />

@@ -8,10 +8,12 @@ import { Rating } from 'primereact/rating';
 import { Galleria } from 'primereact/galleria';
 import { ProgressSpinner } from 'primereact/progressspinner';
 import { Toast } from 'primereact/toast';
+import { InputText } from 'primereact/inputtext';
 import '../style sheets/TripsView.css';
 import { convertDateToDMY } from '../utils';
 
 const EditJournal = ({ selectedEntry, trip, text, setText, rating, setRating, uploadedPhotos, setUploadedPhotos }) => {
+    const [location, setLocation] = useState(selectedEntry.location);
     const [loading, setLoading] = useState(false);
     const toast = useRef(null);
 
@@ -43,7 +45,7 @@ const EditJournal = ({ selectedEntry, trip, text, setText, rating, setRating, up
             id: selectedEntry.id,
             text,
             date: selectedEntry.date,
-            location: selectedEntry.location,
+            location,
             tripId: selectedEntry.tripId,
             rating,
             photos: uploadedPhotos.map(photo => ({
@@ -74,7 +76,7 @@ const EditJournal = ({ selectedEntry, trip, text, setText, rating, setRating, up
     };
 
     const header = (
-        <img alt="Card" style={{ height: "10rem" }} src={`https://localhost:44393/${trip?.coverPhotoUrl}`} />
+        <img alt="Card" style={{ height: "10rem" }} src={`https://localhost:44393/photos/${trip?.coverPhotoUrl}`} />
     );
 
     const footer = (
@@ -97,7 +99,7 @@ const EditJournal = ({ selectedEntry, trip, text, setText, rating, setRating, up
                     <i className="pi pi-calendar"></i>
                     <span className="font-semibold">{convertDateToDMY(selectedEntry.date)}</span>
                 </div>}
-                subTitle={trip.title}
+                subTitle={trip?.title}
                 footer={footer}
                 header={header}
                 style={{ width: "80rem" }}>
@@ -105,7 +107,15 @@ const EditJournal = ({ selectedEntry, trip, text, setText, rating, setRating, up
                 <Editor value={text} header={renderHeader} onTextChange={(e) => setText(e.htmlValue)} style={{ height: '100px' }} />
                 <p>How would you rate your day?</p>
                 <Rating value={rating} cancel={false} onChange={(e) => setRating(e.value)} />
-                <p><i className="pi pi-map-marker" /> Location: {selectedEntry.location}</p>
+                <p>
+                    <i className="pi pi-map-marker" /> Location: 
+                    <InputText 
+                        type="text" 
+                        value={location} 
+                        onChange={(e) => setLocation(e.target.value)} 
+                        style={{ marginLeft: '0.5em' }} 
+                    />
+                </p>
                 <p><i className="pi pi-images" /> Photos:</p>
                 <div className="uploaded-photos">
                     <Galleria

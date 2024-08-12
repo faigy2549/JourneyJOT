@@ -17,8 +17,9 @@ const Login = async (username, password) => {
     if (!response.ok) {
       throw new Error('Login failed');
     }
-
+alert(response)
     const userId = getCookie('userId');
+    alert(userId)
     const user = await getUserById(userId);
 
     return user; 
@@ -29,25 +30,27 @@ const Login = async (username, password) => {
 
 
 
-const Register = async (username, password, confirmPassword, email) => {
+const Register = async (username,email,profileImage, password, confirmPassword) => {
   try {
-    const response = await fetch(`${BASE_URL}/register`, {
+    const response = await fetch(`${BASE_URL}/Register`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
-      body: JSON.stringify({ username, password, confirmPassword, email }),
+      body: JSON.stringify(
+        username,
+        email,     
+        profileImage,
+        password,
+        confirmPassword
+      ),
       mode: 'cors', 
+      credentials: 'include', 
     });
 
-    if (response.status !== 201) { // Check for successful creation (201 Created)
-      throw new Error('Registration failed');
-    }
-
-    const responseData = await response.json(); // Parse the response data as JSON
-    return true; // Or return a success message
+    return response; 
   } catch (error) {
-    throw error; // Re-throw the error for handling in the component
+    throw error; 
   }
 };
 
