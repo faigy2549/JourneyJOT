@@ -20,17 +20,16 @@ namespace travel_journal.Services
             _logger = logger;
         }
 
-        public async Task<bool> RegisterAsync(RegisterModel model)
+        public async Task<IdentityResult> RegisterAsync(RegisterModel model)
         {
             _logger.LogInformation($"Attempting to register user: {model.Username}, {model.Email}");
             try
             {
-                var user = new User { UserName = model.Username, Email = model.Email };
+                var user = new User { UserName = model.Username, Email = model.Email, ProfileImage = model.ProfileImage };
                 var result = await _userManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
                     _logger.LogInformation($"User registered successfully: {model.Username}");
-                    return true;
                 }
                 else
                 {
@@ -39,8 +38,8 @@ namespace travel_journal.Services
                     {
                         _logger.LogError($"Error: {error.Description}");
                     }
-                    return false;
                 }
+                return result;
             }
             catch (Exception ex)
             {
@@ -48,6 +47,7 @@ namespace travel_journal.Services
                 throw;
             }
         }
+
 
         public async Task<string> LoginAsync(LoginModel model)
         {

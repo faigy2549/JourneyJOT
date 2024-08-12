@@ -27,15 +27,25 @@ namespace travel_journal.Controllers
             _logger.LogInformation($"Registering user: {model.Username}, {model.Email}");
             try
             {
-                if (await _authenticationService.RegisterAsync(model))
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogInformation("Model validation failed");
+                    return BadRequest(ModelState);
+                }
+
+                var result = await _authenticationService.RegisterAsync(model);
+                if (result.Succeeded)
                 {
                     _logger.LogInformation($"User registered successfully: {model.Username}");
-                    return Ok();
+                    return Ok(new { message = "User registered successfully" });
                 }
                 else
                 {
                     _logger.LogInformation($"Failed to register user: {model.Username}");
-                    ModelState.AddModelError(string.Empty, "Failed to register user.");
+                    foreach (var error in result.Errors)
+                    {
+                        ModelState.AddModelError(string.Empty, error.Description);
+                    }
                     return BadRequest(ModelState);
                 }
             }
@@ -52,24 +62,29 @@ namespace travel_journal.Controllers
             _logger.LogInformation($"Logging in user: {model.Username}");
             try
             {
+                if (!ModelState.IsValid)
+                {
+                    _logger.LogInformation("Model validation failed");
+                    return BadRequest(ModelState);
+                }
+
                 var userId = await _authenticationService.LoginAsync(model);
-                if (userId != null) { 
+                if (userId != null)
+                {
                     _logger.LogInformation($"User logged in successfully: {model.Username}");
                     Response.Cookies.Append("userId", userId, new CookieOptions
                     {
                         HttpOnly = false,
-                        Secure = true,   
-                        SameSite = SameSiteMode.Lax, 
-                        Expires = DateTimeOffset.UtcNow.AddHours(10) 
+                        Secure = true,
+                        SameSite = SameSiteMode.Lax,
+                        Expires = DateTimeOffset.UtcNow.AddHours(10)
                     });
-
                     return Ok(new { message = "Login successful" });
                 }
                 else
                 {
                     _logger.LogInformation($"Invalid login attempt for user: {model.Username}");
-                    ModelState.AddModelError(string.Empty, "Invalid login attempt.");
-                    return BadRequest(new { error = "Invalid login attempt" });
+                    return BadRequest(new { error = "Invalid username or password" });
                 }
             }
             catch (Exception ex)
@@ -79,4 +94,4 @@ namespace travel_journal.Controllers
             }
         }
     }
-}
+    }
