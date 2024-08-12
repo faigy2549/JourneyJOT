@@ -14,7 +14,7 @@ const ViewJournal = ({selectedEntry,trip,text,rating,uploadedPhotos}) => {
 
 
 const header = (
-    <img alt="Card" style={{ height: "10rem" }} src={`https://localhost:44393/${trip?.coverPhotoUrl}`} />
+    <img alt="Card" style={{ height: "10rem" }} src={`https://localhost:44393/photos/${trip?.coverPhotoUrl}`} />
 );
 
 const itemTemplate = (item) => {
@@ -38,7 +38,7 @@ return(
             <i className="pi pi-calendar"></i>
             <span className="font-semibold">{convertDateToDMY(selectedEntry.date)}</span>
         </div>}
-        subTitle={trip.title}
+        subTitle={trip?.title}
         header={header}
         style={{ width: "80rem" }}>
   <h1>{text}</h1>
