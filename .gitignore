@@ -4,3 +4,7 @@
 wwwroot/
 migrations/
 
+node_modules/
+.env
+.vs/
+appsettings.json 
