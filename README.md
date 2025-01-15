@@ -21,9 +21,6 @@ JourneyJOT is a web-based platform designed to help users journal their trips an
 - **User Authentication**:  
   Secure user accounts for personalized journaling, with the option to save and revisit previous trips.
 
-- **Responsive Design**:  
-  Enjoy JourneyJOT on any device, whether you’re on a computer, tablet, or mobile.
-
 ---
 
 ## Tech Stack
